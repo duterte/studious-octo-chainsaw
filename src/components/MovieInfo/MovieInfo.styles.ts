@@ -1,4 +1,4 @@
-import styled, { StyledComponent } from 'styled-components';
+import styled from 'styled-components';
 
 import { IMAGE_BASE_URL, BACKDROP_SIZE } from '../../config';
 
@@ -24,7 +24,7 @@ export const Wrapper = styled.div<WrapperProps>`
   }
 `;
 
-export const Content: StyledComponent<'div', any, {}, never> = styled.div`
+export const Content = styled.div`
   display: flex;
   max-width: var(--maxWidth);
   margin: 0 auto;
@@ -37,7 +37,7 @@ export const Content: StyledComponent<'div', any, {}, never> = styled.div`
   }
 `;
 
-export const Text: StyledComponent<'div', any, {}, never> = styled.div`
+export const Text = styled.div`
   width: 100%;
   padding: 20px 40px;
   color: var(--white);

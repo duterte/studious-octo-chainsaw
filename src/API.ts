@@ -157,7 +157,7 @@ const apiSettings = {
       return sessionId;
     }
   },
-  rateMovie: async (sessionId: string, movieId: number, value: object) => {
+  rateMovie: async (sessionId: string, movieId: number, value: number) => {
     const endpoint: string = `${API_URL}movie/${movieId}/rating?api_key=${API_KEY}&session_id=${sessionId}`;
 
     const rating = await (
